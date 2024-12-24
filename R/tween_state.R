@@ -154,7 +154,7 @@ tween_state <- function(.data, to, ease, nframes, id = NULL, enter = NULL, exit 
       } else if (all_na_to) {
         storage.mode(to[[i]]) <- storage.mode(from[[i]])
       } else {
-        stop('The ', names(to)[i], 'column differs in type between the two inputs', call. = FALSE)
+        stop('The ', names(to)[i], ' column differs in type between the two inputs', call. = FALSE)
       }
     }
   }
